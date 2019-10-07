@@ -226,7 +226,6 @@ footer {
 address {
   border-bottom: 1px solid gray;
   padding-bottom: 5%;
-  
 }
 
 small {
@@ -238,65 +237,67 @@ small {
 }
 
 .info {
-	background-color: 	#F3F3F3;
-	border: 1px solid black;
-	padding: 5%;
+  background-color: #f3f3f3;
+  border: 1px solid black;
+  padding: 5%;
 }
 
 p {
-	  margin: 20px 0;
+  margin: 20px 0;
+}
+
+/* tablet view */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+    /* margin-bottom: 2% 0; */
   }
 
-  /* tablet view */
-  @media (max-width: 768px) {
-    header {
-        flex-direction: column-reverse;
-        align-items: center;
-        /* margin-bottom: 2% 0; */
-    }
-
-    .logo {
-        margin-bottom: 15%;
-    }
-
-    nav a {
-        margin: 0 30px;
-    }
-
-    img.header-image {
-        display: none;
-    }
-
-    .top-content {
-        justify-content: center;
-    }
+  .logo {
+    margin-bottom: 15%;
   }
 
-  /* mobile view */
-  @media (max-width: 667px) {
-      header nav {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-
-      nav a {
-          border-top: 1px solid black;
-          
-          padding: 10% 100%;
-      }
-
-      nav a:last-child {
-        border-bottom: 1px solid black;
-      }
-
-      .main-content {
-          flex-direction: column;
-      }
-      
-      .main-content section {
-          margin-bottom: 0;
-      }
+  nav a {
+    margin: 0 25px;
   }
 
+  img.header-image {
+    display: none;
+  }
 
+  .top-content {
+    justify-content: center;
+  }
+}
+
+/* mobile view */
+@media (max-width: 667px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    border-top: 1px solid black;
+
+    padding: 10% 100%;
+  }
+
+  nav a:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-content section {
+    margin-bottom: 0;
+  }
+
+  .main-content section:last-of-type {
+    margin-bottom: 10px;
+  }
+}
