@@ -272,6 +272,7 @@ p {
     }
   }
 
+  /* mobile view */
   @media (max-width: 667px) {
       header nav {
           display: flex;
@@ -287,6 +288,14 @@ p {
 
       nav a:last-child {
         border-bottom: 1px solid black;
+      }
+
+      .main-content {
+          flex-direction: column;
+      }
+      
+      .main-content section {
+          margin-bottom: 0;
       }
   }
 
