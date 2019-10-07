@@ -152,7 +152,7 @@ h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-  margin: 5% auto;
+  margin: 0 auto;
   max-width: 800px;
 }
 
@@ -176,10 +176,10 @@ nav a {
 
 .top-content {
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   border-bottom: 1px solid black;
-  padding: 5%;
+  padding: 2%;
   justify-content: space-between;
 }
 
