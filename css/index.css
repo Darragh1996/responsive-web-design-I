@@ -153,7 +153,7 @@ h5 {
 
 .container {
   margin: 5% auto;
-  max-width: 750px;
+  max-width: 800px;
 }
 
 header {
@@ -164,6 +164,7 @@ header {
 .logo,
 nav {
   align-self: center;
+  margin: 0 5%;
 }
 
 nav a {
@@ -192,7 +193,7 @@ h1 {
 
 .button {
   border: 1px solid gray;
-  padding: 10px 20px;
+  padding: 5px 40px;
   font-size: 20px;
   align-self: center;
 }
@@ -208,7 +209,8 @@ section {
 
 .middle-img {
   display: flex;
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
   justify-content: center;
 }
 
@@ -238,6 +240,49 @@ small {
 
 p {
 	  margin: 20px 0;
+  }
+
+  /* tablet view */
+  @media (max-width: 768px) {
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+        /* margin-bottom: 2% 0; */
+    }
+
+    .logo {
+        margin-bottom: 15%;
+    }
+
+    nav a {
+        margin: 0 30px;
+    }
+
+    img.header-image {
+        display: none;
+    }
+
+    .top-content {
+        justify-content: center;
+    }
+  }
+
+  @media (max-width: 667px) {
+      header nav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      nav a {
+          border-top: 1px solid black;
+          
+          padding: 10% 100%;
+      }
+
+      nav a:last-child {
+        border-bottom: 1px solid black;
+      }
   }
 
 
